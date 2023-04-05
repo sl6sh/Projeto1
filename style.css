@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --cor-primaria: #1A120B;
+    --cor-secundaria: #E5E5CB;
+    --cor-terciaria: #D5CEA3;
+    --cor-hoover: #3C2A21;
+
+    --fonte-titulo: 'Krona One', 'sans-serif';
+    --fonte-secundaria: 'Raleway', 'sans-serif';
+    --fonte-terciaria: 'Montserrat', 'sans-serif';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo{
+    color: var(--cor-terciaria);
+}
+.apresentação{
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentação__conteúdo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentar__img{
+    width: 50%;
+}
+.tsize{
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+}
+.psize{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.bstyle{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px
+}
+.bstyle__{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px;
+}
+.bstyle__:hover{
+    background-color: var(--cor-hoover);
+}
+.footer{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--cor-terciaria);
+    padding: 30px;
+}
+.cabeçalho{
+    padding: 3% 0% 0% 15%;
+}
+.menu{
+    display: flex;
+    gap: 80px;
+}
+.menu__{
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .menu{
+        padding: 8%;
+    }
+    .menu__{
+        display: flex;
+        justify-content: center;
+    }
+     .apresentação{
+        padding: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+     }
+     .apresentação__conteúdo{
+        width: auto;
+     }
+}
